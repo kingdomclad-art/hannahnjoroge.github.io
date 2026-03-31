@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hannah Njoroge — Operations Strategist & AI Integration for Social Impact</title>
-<meta name="description" content="Hannah Njoroge helps NGOs and social enterprises build smarter operations — combining 7+ years of operational leadership with emerging AI expertise.">
+<title>Hannah Njoroge — Operations Strategist for Social Impact</title>
+<meta name="description" content="Hannah Njoroge helps NGOs and social enterprises build smarter, gender-responsive operations — combining 7+ years of operational leadership with emerging AI expertise.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -20,681 +20,360 @@
     --muted: #7a7870;
     --border: #ddd9d0;
   }
-
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
-
   body {
-    background: var(--paper);
-    color: var(--ink);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-    overflow-x: hidden;
+    background: var(--paper); color: var(--ink);
+    font-family: 'DM Sans', sans-serif; font-size: 16px;
+    line-height: 1.7; overflow-x: hidden;
   }
 
-  /* ── NAV ── */
+  /* NAV */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; justify-content: space-between; align-items: center;
     padding: 1.2rem 4rem;
-    background: rgba(245,242,236,0.92);
-    backdrop-filter: blur(8px);
+    background: rgba(245,242,236,0.92); backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border);
   }
   .nav-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    color: var(--ink);
-    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;
+    font-weight: 600; letter-spacing: 0.05em; color: var(--ink); text-decoration: none;
   }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-    text-decoration: none;
-    transition: color 0.2s;
+    font-family: 'DM Mono', monospace; font-size: 0.75rem;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted); text-decoration: none; transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--accent); }
 
-  /* ── HERO ── */
-  .hero {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 80px;
-  }
+  /* HERO */
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 80px; }
   .hero-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 6rem 4rem 6rem 6rem;
-    position: relative;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 6rem 4rem 6rem 6rem; position: relative;
   }
   .hero-left::after {
-    content: '';
-    position: absolute; right: 0; top: 15%; bottom: 15%;
+    content: ''; position: absolute; right: 0; top: 15%; bottom: 15%;
     width: 1px; background: var(--border);
   }
   .hero-tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1.5rem;
+    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 1.5rem;
   }
   .hero-name {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(3rem, 5vw, 4.5rem);
-    font-weight: 300;
-    line-height: 1.1;
-    margin-bottom: 0.3rem;
+    font-size: clamp(3rem, 5vw, 4.5rem); font-weight: 300;
+    line-height: 1.1; margin-bottom: 0.3rem;
   }
-  .hero-name em {
-    font-style: italic;
-    color: var(--accent);
-  }
+  .hero-name em { font-style: italic; color: var(--accent); }
   .hero-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
-    font-weight: 300;
-    color: var(--sage);
-    margin-bottom: 2rem;
-    letter-spacing: 0.02em;
+    font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 300;
+    color: var(--sage); margin-bottom: 2rem; letter-spacing: 0.02em;
   }
   .hero-statement {
-    font-size: 1.05rem;
-    color: var(--ink);
-    max-width: 480px;
-    line-height: 1.8;
-    margin-bottom: 2.5rem;
+    font-size: 1.05rem; color: var(--ink);
+    max-width: 480px; line-height: 1.8; margin-bottom: 2.5rem;
   }
   .hero-statement strong { color: var(--accent); font-weight: 500; }
   .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
   .btn-primary {
-    background: var(--accent);
-    color: white;
-    padding: 0.8rem 2rem;
-    text-decoration: none;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: background 0.2s, transform 0.2s;
-    display: inline-block;
+    background: var(--accent); color: white; padding: 0.8rem 2rem;
+    text-decoration: none; font-family: 'DM Mono', monospace;
+    font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+    transition: background 0.2s, transform 0.2s; display: inline-block;
   }
   .btn-primary:hover { background: #9e4d2e; transform: translateY(-1px); }
   .btn-secondary {
-    border: 1px solid var(--ink);
-    color: var(--ink);
-    padding: 0.8rem 2rem;
-    text-decoration: none;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: all 0.2s;
-    display: inline-block;
+    border: 1px solid var(--ink); color: var(--ink); padding: 0.8rem 2rem;
+    text-decoration: none; font-family: 'DM Mono', monospace;
+    font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+    transition: all 0.2s; display: inline-block;
   }
   .btn-secondary:hover { background: var(--ink); color: var(--paper); }
-
   .hero-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 6rem 6rem 6rem 4rem;
-    background: var(--warm-white);
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 6rem 6rem 6rem 4rem; background: var(--warm-white);
   }
   .hero-right-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 1.5rem;
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 1.5rem;
   }
-  .stats-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    margin-bottom: 2.5rem;
-  }
-  .stat {
-    padding: 1.2rem;
-    border: 1px solid var(--border);
-    background: var(--paper);
-  }
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.5rem; }
+  .stat { padding: 1.2rem; border: 1px solid var(--border); background: var(--paper); }
   .stat-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: var(--accent);
-    line-height: 1;
-    margin-bottom: 0.3rem;
+    font-family: 'Cormorant Garamond', serif; font-size: 2.2rem;
+    font-weight: 600; color: var(--accent); line-height: 1; margin-bottom: 0.3rem;
   }
-  .stat-label {
-    font-size: 0.8rem;
-    color: var(--muted);
-    line-height: 1.4;
-  }
+  .stat-label { font-size: 0.8rem; color: var(--muted); line-height: 1.4; }
   .currently-learning {
-    background: var(--sage-light);
-    padding: 1.2rem 1.5rem;
+    background: var(--sage-light); padding: 1.2rem 1.5rem;
     border-left: 3px solid var(--sage);
   }
   .currently-learning .cl-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--sage);
-    margin-bottom: 0.5rem;
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--sage); margin-bottom: 0.5rem;
   }
-  .currently-learning p {
-    font-size: 0.88rem;
-    color: var(--ink);
-    line-height: 1.6;
+  .currently-learning p { font-size: 0.88rem; color: var(--ink); line-height: 1.6; }
+
+  /* VALUES STRIP */
+  .values-strip {
+    background: var(--ink); padding: 2.5rem 0;
+    display: flex; justify-content: center; gap: 5rem; flex-wrap: wrap;
+  }
+  .value-item { text-align: center; }
+  .value-icon { font-size: 1.5rem; margin-bottom: 0.4rem; }
+  .value-word {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.15rem;
+    font-weight: 600; color: var(--paper); letter-spacing: 0.06em;
+  }
+  .value-sub {
+    font-family: 'DM Mono', monospace; font-size: 0.58rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--gold); margin-top: 0.2rem;
   }
 
-  /* ── SECTION COMMONS ── */
+  /* SECTION COMMONS */
   section { padding: 6rem 0; }
   .container { max-width: 1100px; margin: 0 auto; padding: 0 4rem; }
   .section-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 0.8rem;
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 0.8rem;
   }
   .section-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2rem, 3.5vw, 3rem);
-    font-weight: 300;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
+    font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 300;
+    line-height: 1.2; margin-bottom: 1.5rem;
   }
   .section-title em { font-style: italic; color: var(--accent); }
-  .section-intro {
-    font-size: 1rem;
-    color: var(--muted);
-    max-width: 600px;
-    line-height: 1.8;
-  }
-  hr.divider {
-    border: none; border-top: 1px solid var(--border);
-    margin: 0;
-  }
+  .section-intro { font-size: 1rem; color: var(--muted); max-width: 600px; line-height: 1.8; }
+  hr.divider { border: none; border-top: 1px solid var(--border); margin: 0; }
 
-  /* ── ABOUT ── */
+  /* ABOUT */
   #about { background: var(--warm-white); }
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 5rem;
-    align-items: start;
-    margin-top: 3rem;
-  }
-  .about-left p {
-    font-size: 1.02rem;
-    line-height: 1.85;
-    color: var(--ink);
-    margin-bottom: 1.2rem;
-  }
+  .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: start; margin-top: 3rem; }
+  .about-left p { font-size: 1.02rem; line-height: 1.85; color: var(--ink); margin-bottom: 1.2rem; }
   .about-left p strong { color: var(--accent); font-weight: 500; }
-  .about-right { }
-  .timeline { }
+  .gender-lens-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--sage-light); border: 1px solid var(--sage);
+    padding: 0.5rem 1rem; margin-top: 0.2rem; margin-bottom: 1.2rem;
+  }
+  .gender-lens-badge span {
+    font-family: 'DM Mono', monospace; font-size: 0.68rem;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage);
+  }
   .timeline-item {
-    display: grid;
-    grid-template-columns: 90px 1fr;
-    gap: 1rem;
-    padding: 1.2rem 0;
-    border-bottom: 1px solid var(--border);
+    display: grid; grid-template-columns: 90px 1fr;
+    gap: 1rem; padding: 1.2rem 0; border-bottom: 1px solid var(--border);
   }
   .timeline-item:last-child { border-bottom: none; }
-  .tl-date {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    color: var(--muted);
-    padding-top: 3px;
-  }
-  .tl-content { }
-  .tl-org {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--ink);
-    margin-bottom: 0.2rem;
-  }
-  .tl-role {
-    font-size: 0.82rem;
-    color: var(--accent);
-    font-family: 'DM Mono', monospace;
-    letter-spacing: 0.05em;
-  }
+  .tl-date { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--muted); padding-top: 3px; }
+  .tl-org { font-size: 0.9rem; font-weight: 500; color: var(--ink); margin-bottom: 0.2rem; }
+  .tl-role { font-size: 0.82rem; color: var(--accent); font-family: 'DM Mono', monospace; letter-spacing: 0.05em; }
 
-  /* ── SERVICES ── */
-  #services { }
+  /* SERVICES */
   .services-header { margin-bottom: 3.5rem; }
   .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
-    background: var(--border);
-    border: 1px solid var(--border);
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 2px; background: var(--border); border: 1px solid var(--border);
   }
   .service-card {
-    background: var(--paper);
-    padding: 2.5rem 2rem;
-    position: relative;
-    transition: background 0.3s;
+    background: var(--paper); padding: 2.5rem 2rem;
+    position: relative; transition: background 0.3s;
   }
   .service-card:hover { background: var(--warm-white); }
   .service-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3.5rem;
-    font-weight: 300;
-    color: var(--accent-light);
-    line-height: 1;
-    margin-bottom: 1rem;
+    font-family: 'Cormorant Garamond', serif; font-size: 3.5rem;
+    font-weight: 300; color: var(--accent-light); line-height: 1; margin-bottom: 1rem;
   }
   .service-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
-    line-height: 1.3;
+    font-family: 'Cormorant Garamond', serif; font-size: 1.4rem;
+    font-weight: 600; margin-bottom: 0.8rem; line-height: 1.3;
   }
-  .service-desc {
-    font-size: 0.88rem;
-    color: var(--muted);
-    line-height: 1.7;
-    margin-bottom: 1.2rem;
-  }
-  .service-tags {
-    display: flex; flex-wrap: wrap; gap: 0.4rem;
-  }
+  .service-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.2rem; }
+  .service-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
   .tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 0.3rem 0.6rem;
-    border: 1px solid var(--border);
-    color: var(--muted);
+    font-family: 'DM Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 0.3rem 0.6rem; border: 1px solid var(--border); color: var(--muted);
   }
 
-  /* ── AI LEARNING ── */
+  /* AI LEARNING */
   #learning { background: var(--ink); color: var(--paper); }
   #learning .section-label { color: var(--gold); }
   #learning .section-title { color: var(--paper); }
   #learning .section-title em { color: var(--gold); }
-  .learning-intro {
-    font-size: 1rem;
-    color: rgba(245,242,236,0.7);
-    max-width: 600px;
-    line-height: 1.8;
-    margin-bottom: 3rem;
-  }
-  .learning-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-  .course-card {
-    border: 1px solid rgba(245,242,236,0.15);
-    padding: 1.8rem 1.5rem;
-    position: relative;
-    transition: border-color 0.3s;
-  }
+  .learning-intro { font-size: 1rem; color: rgba(245,242,236,0.7); max-width: 600px; line-height: 1.8; margin-bottom: 3rem; }
+  .learning-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .course-card { border: 1px solid rgba(245,242,236,0.15); padding: 1.8rem 1.5rem; transition: border-color 0.3s; }
   .course-card:hover { border-color: var(--gold); }
   .course-level {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 0.8rem;
+    font-family: 'DM Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem;
   }
   .course-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--paper);
-    margin-bottom: 0.4rem;
-    line-height: 1.3;
+    font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;
+    font-weight: 600; color: var(--paper); margin-bottom: 0.4rem; line-height: 1.3;
   }
   .course-provider {
-    font-size: 0.8rem;
-    color: rgba(245,242,236,0.5);
-    margin-bottom: 0.8rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
+    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    color: rgba(245,242,236,0.5); margin-bottom: 0.8rem;
   }
-  .course-desc {
-    font-size: 0.83rem;
-    color: rgba(245,242,236,0.65);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-  .course-why {
-    font-size: 0.8rem;
-    color: var(--gold);
-    font-style: italic;
-    line-height: 1.5;
-  }
+  .course-desc { font-size: 0.83rem; color: rgba(245,242,236,0.65); line-height: 1.6; margin-bottom: 1rem; }
+  .course-why { font-size: 0.8rem; color: var(--gold); font-style: italic; line-height: 1.5; }
   .cost-badge {
-    display: inline-block;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.6rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 0.25rem 0.5rem;
-    margin-top: 0.8rem;
-    border: 1px solid;
+    display: inline-block; font-family: 'DM Mono', monospace; font-size: 0.6rem;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.25rem 0.5rem; margin-top: 0.8rem; border: 1px solid;
   }
   .cost-free { border-color: var(--sage); color: #98b89c; }
-  .cost-paid { border-color: rgba(245,242,236,0.3); color: rgba(245,242,236,0.4); }
 
-  /* ── EXPERIENCE ── */
+  /* EXPERIENCE */
   #experience { background: var(--warm-white); }
   .exp-tabs {
-    display: flex;
-    gap: 0;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 3rem;
-    margin-top: 2.5rem;
+    display: flex; border-bottom: 1px solid var(--border);
+    margin-bottom: 3rem; margin-top: 2.5rem;
   }
   .exp-tab {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 0.8rem 1.5rem;
-    cursor: pointer;
-    color: var(--muted);
-    border-bottom: 2px solid transparent;
-    margin-bottom: -1px;
-    background: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.8rem 1.5rem; cursor: pointer; color: var(--muted);
+    border-bottom: 2px solid transparent; margin-bottom: -1px;
+    background: none; border-top: none; border-left: none; border-right: none;
     transition: all 0.2s;
   }
-  .exp-tab.active {
-    color: var(--accent);
-    border-bottom-color: var(--accent);
-  }
+  .exp-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
   .exp-panel { display: none; }
   .exp-panel.active { display: block; }
   .exp-item {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 3rem;
-    padding: 2.5rem 0;
-    border-bottom: 1px solid var(--border);
+    display: grid; grid-template-columns: 200px 1fr;
+    gap: 3rem; padding: 2.5rem 0; border-bottom: 1px solid var(--border);
   }
   .exp-item:last-child { border-bottom: none; }
-  .exp-meta { }
-  .exp-dates {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    color: var(--muted);
-    margin-bottom: 0.5rem;
-  }
-  .exp-org {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--ink);
-    margin-bottom: 0.3rem;
-  }
-  .exp-loc {
-    font-size: 0.8rem;
-    color: var(--muted);
-    font-style: italic;
-  }
-  .exp-content { }
+  .exp-dates { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .exp-org { font-size: 0.9rem; font-weight: 500; color: var(--ink); margin-bottom: 0.3rem; }
+  .exp-loc { font-size: 0.8rem; color: var(--muted); font-style: italic; }
   .exp-role {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
-    color: var(--ink);
+    font-family: 'Cormorant Garamond', serif; font-size: 1.3rem;
+    font-weight: 600; margin-bottom: 0.8rem; color: var(--ink);
   }
-  .exp-desc {
-    font-size: 0.9rem;
-    color: var(--muted);
-    line-height: 1.7;
-    margin-bottom: 1rem;
-  }
-  .exp-highlights {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-  }
+  .exp-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin-bottom: 1rem; }
+  .exp-highlights { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
   .exp-highlights li {
-    font-size: 0.87rem;
-    color: var(--ink);
-    line-height: 1.6;
-    padding-left: 1rem;
-    position: relative;
+    font-size: 0.87rem; color: var(--ink); line-height: 1.6;
+    padding-left: 1.2rem; position: relative;
   }
-  .exp-highlights li::before {
-    content: '→';
-    position: absolute; left: 0;
-    color: var(--accent);
-    font-size: 0.8rem;
-  }
+  .exp-highlights li::before { content: '->'; position: absolute; left: 0; color: var(--accent); font-size: 0.8rem; }
   .ai-lens {
-    margin-top: 1rem;
-    padding: 0.8rem 1rem;
-    background: var(--accent-light);
-    border-left: 2px solid var(--accent);
-    font-size: 0.82rem;
-    color: var(--accent);
-    font-style: italic;
+    margin-top: 1rem; padding: 0.8rem 1rem;
+    background: var(--accent-light); border-left: 2px solid var(--accent);
+    font-size: 0.82rem; color: var(--accent); font-style: italic;
   }
   .ai-lens strong { font-style: normal; font-weight: 500; }
 
-  /* ── VOLUNTEER ── */
-  #volunteer { }
-  .volunteer-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-top: 3rem;
+  /* EDUCATION */
+  #education { background: var(--paper); }
+  .edu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 3rem; }
+  .edu-card {
+    padding: 2rem; border: 1px solid var(--border);
+    background: var(--warm-white); transition: border-color 0.3s;
   }
-  .vol-card {
-    padding: 2rem;
-    border: 1px solid var(--border);
-    background: var(--warm-white);
-    transition: border-color 0.3s;
+  .edu-card:hover { border-color: var(--accent); }
+  .edu-flag {
+    font-family: 'DM Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.5rem;
   }
+  .edu-degree {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;
+    font-weight: 600; margin-bottom: 0.3rem; line-height: 1.3;
+  }
+  .edu-institution { font-size: 0.88rem; font-weight: 500; color: var(--ink); margin-bottom: 0.2rem; }
+  .edu-location { font-size: 0.8rem; color: var(--muted); font-style: italic; margin-bottom: 0.8rem; }
+  .edu-note { font-size: 0.83rem; color: var(--muted); line-height: 1.6; }
+
+  /* VOLUNTEER */
+  #volunteer { background: var(--warm-white); }
+  .volunteer-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .vol-card { padding: 2rem; border: 1px solid var(--border); background: var(--paper); transition: border-color 0.3s; }
   .vol-card:hover { border-color: var(--sage); }
   .vol-org {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--sage);
-    margin-bottom: 0.5rem;
+    font-family: 'DM Mono', monospace; font-size: 0.68rem;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); margin-bottom: 0.5rem;
   }
-  .vol-role {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.15rem;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-  }
-  .vol-location {
-    font-size: 0.8rem;
-    color: var(--muted);
-    font-style: italic;
-    margin-bottom: 0.8rem;
-  }
-  .vol-desc {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.6;
-  }
+  .vol-role { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 600; margin-bottom: 0.3rem; }
+  .vol-location { font-size: 0.8rem; color: var(--muted); font-style: italic; margin-bottom: 0.8rem; }
+  .vol-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
 
-  /* ── ARTICLES ── */
-  #articles { background: var(--warm-white); }
-  .articles-coming {
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
-    background: var(--border);
-  }
-  .article-placeholder {
-    background: var(--paper);
-    padding: 2.5rem 2rem;
-  }
-  .article-placeholder.real {
-    background: var(--warm-white);
-  }
+  /* ARTICLES */
+  #articles { }
+  .articles-coming { margin-top: 3rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border); }
+  .article-placeholder { background: var(--paper); padding: 2.5rem 2rem; }
   .article-category {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 0.8rem;
+    font-family: 'DM Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem;
   }
   .article-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    line-height: 1.4;
-    margin-bottom: 0.5rem;
-    color: var(--ink);
+    font-family: 'Cormorant Garamond', serif; font-size: 1.3rem;
+    font-weight: 600; line-height: 1.4; margin-bottom: 0.5rem; color: var(--ink);
   }
-  .article-preview {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
+  .article-preview { font-size: 0.85rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
   .article-status {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-    opacity: 0.6;
+    font-family: 'DM Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); opacity: 0.6;
   }
-  .article-link {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent);
-    text-decoration: none;
-  }
-  .article-link:hover { text-decoration: underline; }
 
-  /* ── CONTACT ── */
-  #contact {
-    background: var(--ink);
-    color: var(--paper);
-    text-align: center;
-    padding: 7rem 0;
-  }
+  /* CONTACT */
+  #contact { background: var(--ink); color: var(--paper); text-align: center; padding: 7rem 0; }
   #contact .section-label { color: var(--gold); }
   #contact .section-title { color: var(--paper); }
   .contact-statement {
-    font-size: 1.05rem;
-    color: rgba(245,242,236,0.65);
-    max-width: 550px;
-    margin: 0 auto 3rem;
-    line-height: 1.8;
+    font-size: 1.05rem; color: rgba(245,242,236,0.65);
+    max-width: 550px; margin: 0 auto 3rem; line-height: 1.8;
   }
-  .contact-methods {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-  }
-  .contact-method {
-    text-align: left;
-  }
+  .contact-methods { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 3rem; }
   .cm-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 0.3rem;
+    font-family: 'DM Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.3rem;
   }
-  .cm-value a {
-    color: var(--paper);
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
+  .cm-value a { color: var(--paper); text-decoration: none; font-size: 0.9rem; }
   .cm-value a:hover { text-decoration: underline; }
-  .open-to {
-    display: flex;
-    justify-content: center;
-    gap: 0.8rem;
-    flex-wrap: wrap;
-  }
+  .open-to { display: flex; justify-content: center; gap: 0.8rem; flex-wrap: wrap; }
   .open-to-tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 0.4rem 0.8rem;
-    border: 1px solid rgba(245,242,236,0.25);
-    color: rgba(245,242,236,0.6);
+    font-family: 'DM Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.4rem 0.8rem; border: 1px solid rgba(245,242,236,0.25); color: rgba(245,242,236,0.6);
   }
 
-  /* ── FOOTER ── */
-  footer {
-    background: #111110;
-    padding: 2rem 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .footer-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
-    color: rgba(245,242,236,0.4);
-  }
+  /* FOOTER */
+  footer { background: #111110; padding: 2rem 4rem; display: flex; justify-content: space-between; align-items: center; }
+  .footer-name { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: rgba(245,242,236,0.4); }
   .footer-links { display: flex; gap: 1.5rem; }
   .footer-links a {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(245,242,236,0.3);
-    text-decoration: none;
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(245,242,236,0.3); text-decoration: none;
   }
   .footer-links a:hover { color: rgba(245,242,236,0.6); }
 
-  /* ── RESPONSIVE ── */
+  /* RESPONSIVE */
   @media (max-width: 900px) {
     nav { padding: 1rem 2rem; }
     .hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-left { padding: 5rem 2rem 2rem; }
     .hero-left::after { display: none; }
     .hero-right { padding: 2rem; }
-    .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-    .services-grid { grid-template-columns: 1fr; }
-    .learning-grid { grid-template-columns: 1fr; }
+    .about-grid, .services-grid, .learning-grid, .edu-grid, .volunteer-grid, .articles-coming { grid-template-columns: 1fr; }
     .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
-    .volunteer-grid { grid-template-columns: 1fr; }
-    .articles-coming { grid-template-columns: 1fr; }
     .container { padding: 0 2rem; }
     footer { flex-direction: column; gap: 1rem; text-align: center; }
+    .values-strip { gap: 2rem; padding: 2rem 1.5rem; }
   }
 </style>
 </head>
@@ -715,11 +394,11 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <p class="hero-tag">Operations · AI Integration · Social Impact</p>
+    <p class="hero-tag">Operations · Gender Lens · Systems Thinking · AI Integration</p>
     <h1 class="hero-name">Hannah<br><em>Njoroge</em></h1>
-    <p class="hero-title">Operations Strategist for NGOs & Social Enterprises</p>
+    <p class="hero-title">Operations Strategist for NGOs and Social Enterprises</p>
     <p class="hero-statement">
-      I help mission-driven organisations run better — combining <strong>7+ years of operational leadership</strong> across the NGO, education, and development sectors with a growing expertise in <strong>AI-augmented systems</strong> that free up people to do work that actually matters.
+      I help mission-driven organisations run better — combining <strong>7+ years of operational leadership</strong> across education, environment, and empowerment work with a growing expertise in <strong>AI-augmented systems</strong> that free up people to do work that actually matters.
     </p>
     <div class="hero-ctas">
       <a href="#contact" class="btn-primary">Work With Me</a>
@@ -734,12 +413,12 @@
         <div class="stat-label">Years leading operations</div>
       </div>
       <div class="stat">
-        <div class="stat-num">5</div>
-        <div class="stat-label">Countries & contexts</div>
+        <div class="stat-num">6+</div>
+        <div class="stat-label">Countries and contexts</div>
       </div>
       <div class="stat">
         <div class="stat-num">NGO</div>
-        <div class="stat-label">Development · Education · Research</div>
+        <div class="stat-label">Development · Education · Environment</div>
       </div>
       <div class="stat">
         <div class="stat-num">4</div>
@@ -747,11 +426,35 @@
       </div>
     </div>
     <div class="currently-learning">
-      <div class="cl-label">📚 Currently building</div>
-      <p>Actively pursuing AI operations skills — prompt engineering, workflow automation, and AI evaluation — to bridge the gap between operational leadership and the AI-transformed workplace.</p>
+      <div class="cl-label">Currently building</div>
+      <p>Actively pursuing AI operations skills — prompt engineering, workflow automation, and AI evaluation frameworks — to bridge the gap between operational leadership and the AI-transformed workplace.</p>
     </div>
   </div>
 </section>
+
+<!-- VALUES STRIP -->
+<div class="values-strip">
+  <div class="value-item">
+    <div class="value-icon">📚</div>
+    <div class="value-word">Education</div>
+    <div class="value-sub">Learning as liberation</div>
+  </div>
+  <div class="value-item">
+    <div class="value-icon">🌿</div>
+    <div class="value-word">Environment</div>
+    <div class="value-sub">Systems that sustain</div>
+  </div>
+  <div class="value-item">
+    <div class="value-icon">✊</div>
+    <div class="value-word">Empowerment</div>
+    <div class="value-sub">People before processes</div>
+  </div>
+  <div class="value-item">
+    <div class="value-icon">⚧</div>
+    <div class="value-word">Gender Justice</div>
+    <div class="value-sub">Equity by design</div>
+  </div>
+</div>
 
 <hr class="divider">
 
@@ -759,27 +462,37 @@
 <section id="about">
   <div class="container">
     <p class="section-label">Background</p>
-    <h2 class="section-title">Why operational experience<br>is the <em>missing piece</em> in AI</h2>
+    <h2 class="section-title">Operational experience<br>with a <em>systems lens</em></h2>
     <div class="about-grid">
       <div class="about-left">
         <p>
-          Most people trying to break into AI are coming from one direction: technical. They can build the system. What they often can't do is run an organisation, manage diverse teams across cultures, coordinate international programmes, or understand what actually breaks when a new system meets real-world operations.
+          I am an operations leader who thinks in systems. That means I do not just fix the problem in front of me. I look at how the parts connect, where the pressure points are, and what changes at root level will hold over time.
+        </p>
+        <div class="gender-lens-badge">
+          <span>Gender-responsive operations practitioner</span>
+        </div>
+        <p>
+          A gender lens runs through everything I do. I ask who benefits, who is left out, and how systems can be designed from the start to include rather than compensate. That orientation comes from direct experience with UNDP Somalia's Gender Unit, in HIV prevention work, and in research with vulnerable communities. It shapes how I approach every operational challenge.
         </p>
         <p>
-          I've spent over a decade doing exactly that — in schools, NGOs, government census projects, and international development organisations. I've managed budgets, led teams of enumerators in the field, coordinated with UN agencies, and built systems from scratch.
+          My work is rooted in three convictions: that <strong>education is liberation</strong>, that <strong>the environment is inseparable from human wellbeing</strong>, and that <strong>empowerment is the goal of every good system</strong>. I have carried those convictions across school operations, international development programmes, census fieldwork, and research coordination.
         </p>
         <p>
-          Now I'm deliberately adding <strong>AI operations skills</strong> to that foundation — because I believe the organisations that will benefit most from AI are the ones that have someone who understands both the technology <em>and</em> the human realities of deploying it responsibly.
-        </p>
-        <p>
-          My work is guided by one conviction: <strong>technology should amplify human potential, not replace it.</strong> Especially in organisations doing meaningful work.
+          I am now deliberately adding AI operations skills to that foundation — because the organisations doing the most important work in education, environment, and empowerment deserve the same operational advantages as the private sector, built responsibly and with equity at the centre.
         </p>
       </div>
       <div class="about-right">
         <p class="hero-right-label" style="margin-bottom:1rem;">Career journey</p>
         <div class="timeline">
           <div class="timeline-item">
-            <div class="tl-date">2017–<br>Present</div>
+            <div class="tl-date">2024<br>Present</div>
+            <div class="tl-content">
+              <div class="tl-org">Sabbatical</div>
+              <div class="tl-role">Courses, AI skills, strategic repositioning</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-date">2017<br>2024</div>
             <div class="tl-content">
               <div class="tl-org">Ndarugu Academy, Thika</div>
               <div class="tl-role">Director of Operations</div>
@@ -814,10 +527,10 @@
             </div>
           </div>
           <div class="timeline-item">
-            <div class="tl-date">2008–<br>2009</div>
+            <div class="tl-date">2008<br>2009</div>
             <div class="tl-content">
               <div class="tl-org">Satyam Computer Services, India</div>
-              <div class="tl-role">Learning & Development Coordinator</div>
+              <div class="tl-role">Learning and Development Coordinator</div>
             </div>
           </div>
         </div>
@@ -834,15 +547,16 @@
     <div class="services-header">
       <p class="section-label">What I offer</p>
       <h2 class="section-title">Services for <em>mission-driven</em> organisations</h2>
-      <p class="section-intro">Whether you need operational clarity, support integrating AI tools into your work, or both — I offer practical, grounded engagements designed for NGOs, social enterprises, and development organisations.</p>
+      <p class="section-intro">Whether you need operational clarity, support integrating AI tools into your work, or gender-responsive systems design, I offer practical engagements designed for NGOs, social enterprises, and development organisations.</p>
     </div>
     <div class="services-grid">
       <div class="service-card">
         <div class="service-num">01</div>
-        <div class="service-title">Operations Assessment & Systems Design</div>
-        <p class="service-desc">A structured review of how your organisation currently runs — workflows, handoffs, documentation, reporting — with a practical roadmap for improvement. Suitable for organisations scaling, restructuring, or preparing for AI integration.</p>
+        <div class="service-title">Operations Assessment and Systems Design</div>
+        <p class="service-desc">A structured review of how your organisation currently runs — workflows, handoffs, documentation, reporting — with a practical roadmap for improvement. A systems lens that examines root causes, not just symptoms. Suitable for organisations scaling, restructuring, or preparing for AI integration.</p>
         <div class="service-tags">
           <span class="tag">Process mapping</span>
+          <span class="tag">Systems thinking</span>
           <span class="tag">Workflow design</span>
           <span class="tag">Change management</span>
           <span class="tag">Remote delivery</span>
@@ -850,24 +564,25 @@
       </div>
       <div class="service-card">
         <div class="service-num">02</div>
-        <div class="service-title">AI Readiness & Integration Support</div>
-        <p class="service-desc">Help your team understand which operations are ready for AI augmentation, which aren't, and how to implement AI tools without breaking what's working. Includes ethical and governance considerations for social impact contexts.</p>
+        <div class="service-title">AI Readiness and Integration Support</div>
+        <p class="service-desc">Help your team understand which operations are ready for AI augmentation, which are not, and how to implement AI tools without breaking what is working. Ethical and governance considerations are built in, with particular attention to gender equity and inclusion in AI-augmented systems.</p>
         <div class="service-tags">
           <span class="tag">AI readiness audit</span>
           <span class="tag">Tool selection</span>
           <span class="tag">Staff enablement</span>
           <span class="tag">Responsible AI</span>
+          <span class="tag">Gender-responsive</span>
         </div>
       </div>
       <div class="service-card">
         <div class="service-num">03</div>
-        <div class="service-title">Programme & Project Operations</div>
-        <p class="service-desc">Operational support for international programmes, field research, conferences, and multi-stakeholder initiatives. Drawing on direct experience coordinating programmes across Kenya, East Africa, and with international partners.</p>
+        <div class="service-title">Programme and Project Operations</div>
+        <p class="service-desc">Operational support for international programmes, field research, training events, and multi-stakeholder initiatives. Drawing on direct experience coordinating programmes across Kenya, East Africa, and with international partners in education, environmental governance, and empowerment.</p>
         <div class="service-tags">
           <span class="tag">Programme management</span>
           <span class="tag">Field coordination</span>
           <span class="tag">Data management</span>
-          <span class="tag">Reporting</span>
+          <span class="tag">Gender mainstreaming</span>
         </div>
       </div>
     </div>
@@ -881,63 +596,56 @@
   <div class="container">
     <p class="section-label">Building in public</p>
     <h2 class="section-title">AI skills I'm <em>actively learning</em></h2>
-    <p class="learning-intro">I believe in transparency about where I am in my journey. These are the specific AI courses and skills I'm currently pursuing — chosen because they directly complement operational leadership in mission-driven organisations.</p>
+    <p class="learning-intro">I believe in transparency about where I am in my journey. These are the specific AI courses and skills I am currently pursuing — chosen because they directly complement operational leadership in mission-driven organisations, with a focus on responsible and equitable deployment.</p>
     <div class="learning-grid">
-
       <div class="course-card">
         <div class="course-level">Start here · Foundational</div>
-        <div class="course-name">Prompt Engineering & Specification Clarity</div>
+        <div class="course-name">Prompt Engineering and Specification Clarity</div>
         <div class="course-provider">Anthropic — docs.anthropic.com</div>
-        <p class="course-desc">Learning to write precise, unambiguous instructions for AI systems — the skill that underpins everything else in AI operations.</p>
+        <p class="course-desc">Learning to write precise, unambiguous instructions for AI systems. The skill that underpins everything else in AI operations work.</p>
         <p class="course-why">Why: My operations background means I already think in processes and outcomes. This formalises that for AI contexts.</p>
         <span class="cost-badge cost-free">Free</span>
       </div>
-
       <div class="course-card">
         <div class="course-level">Foundational</div>
         <div class="course-name">Introduction to Generative AI</div>
         <div class="course-provider">Google Cloud Skills Boost</div>
         <p class="course-desc">A grounded introduction to how large language models actually work — essential before building anything on top of them.</p>
-        <p class="course-why">Why: Understanding the mechanics of AI prevents costly misapplications in organisational settings.</p>
+        <p class="course-why">Why: Understanding the mechanics of AI prevents costly misapplications in operational and social impact settings.</p>
         <span class="cost-badge cost-free">Free</span>
       </div>
-
       <div class="course-card">
         <div class="course-level">Applied · Operations focus</div>
-        <div class="course-name">AI Automation with n8n</div>
-        <div class="course-provider">n8n Academy + YouTube</div>
-        <p class="course-desc">Building automated workflows that connect tools NGOs and social enterprises already use — no-code/low-code approach.</p>
+        <div class="course-name">AI Workflow Automation with n8n</div>
+        <div class="course-provider">n8n Academy</div>
+        <p class="course-desc">Building automated workflows that connect tools NGOs and social enterprises already use. A no-code approach with immediate operational applications.</p>
         <p class="course-why">Why: The highest-ROI AI skill for operations roles. Automate reporting, data flows, and communications.</p>
-        <span class="cost-badge cost-free">Free (open source)</span>
+        <span class="cost-badge cost-free">Free — open source</span>
       </div>
-
       <div class="course-card">
-        <div class="course-level">Intermediate</div>
+        <div class="course-level">Intermediate · Impact sector</div>
         <div class="course-name">AI for Good Specialization</div>
         <div class="course-provider">DeepLearning.AI / Coursera</div>
-        <p class="course-desc">Covers responsible AI deployment in real-world contexts, with specific attention to social impact, ethics, and governance.</p>
-        <p class="course-why">Why: Directly aligned with NGO and development sector expectations around responsible technology.</p>
+        <p class="course-desc">Responsible AI deployment in real-world contexts, with specific attention to social impact, ethics, and governance. Directly relevant to education and empowerment work.</p>
+        <p class="course-why">Why: Directly aligned with NGO and development sector expectations around responsible technology use.</p>
         <span class="cost-badge cost-free">Audit free</span>
       </div>
-
       <div class="course-card">
-        <div class="course-level">Intermediate</div>
-        <div class="course-name">LLM Evaluation & Quality Judgment</div>
-        <div class="course-provider">Weights & Biases Courses</div>
-        <p class="course-desc">Learning to build evaluation frameworks that test whether AI outputs are actually correct — the most cited skill in AI job postings.</p>
-        <p class="course-why">Why: As someone who's reviewed research, audited processes, and quality-checked operations — this maps naturally onto my existing skills.</p>
-        <span class="cost-badge cost-free">Free</span>
-      </div>
-
-      <div class="course-card">
-        <div class="course-level">Intermediate</div>
+        <div class="course-level">Intermediate · Ethics</div>
         <div class="course-name">UNESCO AI Ethics Certificate</div>
         <div class="course-provider">UNESCO — free online</div>
-        <p class="course-desc">The internationally recognised framework for ethical AI development, particularly relevant for organisations working in fragile or developing contexts.</p>
-        <p class="course-why">Why: Critical differentiator for UN agencies, INGOs, and development finance institutions.</p>
+        <p class="course-desc">The internationally recognised framework for ethical AI, particularly relevant for organisations working in fragile or developing contexts where gender and equity considerations are critical.</p>
+        <p class="course-why">Why: A key differentiator for UN agencies, INGOs, and development finance institutions.</p>
         <span class="cost-badge cost-free">Free</span>
       </div>
-
+      <div class="course-card">
+        <div class="course-level">Intermediate · Quality</div>
+        <div class="course-name">LLM Evaluation and Quality Judgment</div>
+        <div class="course-provider">Weights and Biases Courses</div>
+        <p class="course-desc">Building evaluation frameworks that test whether AI outputs are actually correct. The most cited skill in AI operations job postings globally.</p>
+        <p class="course-why">Why: As someone who has reviewed research data, audited processes, and quality-checked field operations, this maps naturally onto existing skills.</p>
+        <span class="cost-badge cost-free">Free</span>
+      </div>
     </div>
   </div>
 </section>
@@ -949,33 +657,33 @@
   <div class="container">
     <p class="section-label">Work history</p>
     <h2 class="section-title">Experience that <em>translates</em></h2>
-    <p class="section-intro">Seven+ years across operations, research, and international development — each role building skills that are directly relevant to AI-augmented organisational work.</p>
+    <p class="section-intro">Seven-plus years across operations, research, and international development — each role building skills that are directly relevant to AI-augmented organisational work in education, environment, and empowerment.</p>
 
     <div class="exp-tabs">
-      <button class="exp-tab active" onclick="showTab('employment')">Employment</button>
-      <button class="exp-tab" onclick="showTab('consultancy')">Consultancy</button>
-      <button class="exp-tab" onclick="showTab('international')">International</button>
+      <button class="exp-tab active" onclick="showTab('employment', this)">Employment</button>
+      <button class="exp-tab" onclick="showTab('consultancy', this)">Consultancy</button>
+      <button class="exp-tab" onclick="showTab('international', this)">International</button>
     </div>
 
     <!-- EMPLOYMENT -->
     <div class="exp-panel active" id="employment">
       <div class="exp-item">
         <div class="exp-meta">
-          <div class="exp-dates">Feb 2017 – Present</div>
+          <div class="exp-dates">Feb 2017 – Jul 2024</div>
           <div class="exp-org">Ndarugu Academy</div>
           <div class="exp-loc">Thika, Kenya</div>
         </div>
         <div class="exp-content">
           <div class="exp-role">Director of Operations</div>
-          <p class="exp-desc">Led end-to-end school operations for 7+ years — from strategic planning and financial oversight to staff management, process design, and stakeholder engagement.</p>
+          <p class="exp-desc">Led end-to-end school operations for 7 years — from strategic planning and financial oversight to staff management, process design, and stakeholder engagement. In an education context, every operational decision ultimately affects what children learn and how teachers work.</p>
           <ul class="exp-highlights">
             <li>Directed day-to-day operations through strategic implementation and continuous process improvement</li>
-            <li>Managed budget, accounting, and payroll processes, ensuring timely and accurate financial operations</li>
+            <li>Managed budget, accounting, and payroll processes ensuring timely and accurate financial operations</li>
             <li>Built and communicated best practices organisation-wide to ensure alignment with quality standards</li>
-            <li>Led team to consistently surpass performance goals through structured customer service initiatives</li>
-            <li>Developed business plans and advanced organisational vision to align with strategic objectives</li>
+            <li>Led team to consistently surpass performance goals through structured service initiatives</li>
+            <li>Developed business plans and advanced organisational vision in alignment with strategic objectives</li>
           </ul>
-          <div class="ai-lens"><strong>AI translation:</strong> 7 years of operational leadership = direct experience in multi-agent orchestration, quality evaluation, failure pattern recognition, and cost management — all mapped to AI Operations roles.</div>
+          <div class="ai-lens"><strong>AI translation:</strong> 7 years of operational leadership in an education context maps directly to multi-agent orchestration, quality evaluation, failure pattern recognition, and cost management — all core AI Operations competencies.</div>
         </div>
       </div>
 
@@ -987,14 +695,14 @@
         </div>
         <div class="exp-content">
           <div class="exp-role">Business Development Assistant</div>
-          <p class="exp-desc">Supported business development, administrative operations, supply chain, and internal communications for a development consultancy firm.</p>
+          <p class="exp-desc">Supported business development, administrative operations, supply chain, and communications for a development consultancy firm working across social impact sectors.</p>
           <ul class="exp-highlights">
             <li>Identified and pursued new business opportunities; developed project proposals and expressions of interest</li>
             <li>Managed data entry, file organisation, and documentation systems for active projects and associate consultants</li>
             <li>Procured office supplies, managed purchase orders, and coordinated with suppliers within budgetary constraints</li>
             <li>Designed and delivered onboarding training for new employees</li>
           </ul>
-          <div class="ai-lens"><strong>AI translation:</strong> Data management, documentation systems, and supplier coordination = foundational context architecture and information organisation skills.</div>
+          <div class="ai-lens"><strong>AI translation:</strong> Documentation systems and structured data management are the foundation of context architecture — one of the most sought-after AI operations skills.</div>
         </div>
       </div>
 
@@ -1005,12 +713,12 @@
           <div class="exp-loc">Hyderabad, India</div>
         </div>
         <div class="exp-content">
-          <div class="exp-role">Learning & Development Coordinator</div>
-          <p class="exp-desc">Co-facilitated virtual learning programmes and developed content for professional development in a global technology company.</p>
+          <div class="exp-role">Learning and Development Coordinator</div>
+          <p class="exp-desc">Co-facilitated virtual learning programmes and developed curriculum content for professional development inside one of India's largest technology companies — early experience at the intersection of technology, education, and organisational change.</p>
           <ul class="exp-highlights">
-            <li>Co-facilitated and moderated virtual learning sessions on professional skills and people management</li>
-            <li>Developed curriculum content for the School of Management programmes</li>
-            <li>Supported the Annual Global Diversity Conference — logistics, coordination, and programme delivery</li>
+            <li>Co-facilitated and moderated virtual learning sessions on professional skills and people management for a global workforce</li>
+            <li>Developed content for the School of Management programmes</li>
+            <li>Supported the Annual Global Diversity Conference including logistics, coordination, and programme delivery</li>
           </ul>
         </div>
       </div>
@@ -1025,15 +733,15 @@
           <div class="exp-loc">Juja, Kiambu County</div>
         </div>
         <div class="exp-content">
-          <div class="exp-role">Content Supervisor — Kenya Population & Housing Census</div>
-          <p class="exp-desc">Managed census operations for over 1,200 enumerators across Juja Sub-County during Kenya's national census.</p>
+          <div class="exp-role">Content Supervisor — Kenya Population and Housing Census</div>
+          <p class="exp-desc">Managed census operations for over 1,200 enumerators across Juja Sub-County during Kenya's national census. Population data is the backbone of evidence-based development planning and gender-responsive policy.</p>
           <ul class="exp-highlights">
             <li>Trained a class of 50 enumerators before the census week</li>
             <li>Managed a direct team of 11, assigning enumeration areas and ensuring all materials and equipment were in place</li>
             <li>Submitted daily reports of enumeration conducted by the team throughout the census week</li>
             <li>Provided ad-hoc administrative support managing data for all 1,210 enumerators in Juja Sub-County</li>
           </ul>
-          <div class="ai-lens"><strong>AI translation:</strong> Managing 1,200+ person data collection exercise = large-scale data pipeline management, quality assurance, and real-time failure detection at scale.</div>
+          <div class="ai-lens"><strong>AI translation:</strong> Managing a 1,200-person data collection exercise at national scale is large-scale data pipeline management, quality assurance at volume, and real-time failure detection — all directly applicable to AI systems thinking.</div>
         </div>
       </div>
 
@@ -1044,12 +752,28 @@
           <div class="exp-loc">Nairobi, Kenya</div>
         </div>
         <div class="exp-content">
-          <div class="exp-role">Field Researcher & Supervisor — Pregnant Adolescents Study</div>
-          <p class="exp-desc">Coordinated and managed field research targeting 212 participants at Kangemi Health Centre, supervising a team of six researchers.</p>
+          <div class="exp-role">Field Researcher and Supervisor — Pregnant Adolescents Study</div>
+          <p class="exp-desc">Coordinated and managed field research at Kangemi Health Centre targeting 212 participants, supervising a team of six. A study at the intersection of gender, health, and social inequality.</p>
           <ul class="exp-highlights">
             <li>Coordinated all aspects of research operations at the health centre</li>
             <li>Supervised a research team of six and conducted participant interviews directly</li>
             <li>Ensured data collection standards and ethical protocols were maintained throughout</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-dates">Feb – Mar 2015</div>
+          <div class="exp-org">Danish Family Planning Association</div>
+          <div class="exp-loc">Kisumu, Kenya</div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-role">Field Researcher — LGBTI Youth Baseline Survey</div>
+          <p class="exp-desc">Baseline survey for DFPA on LGBTI youth in Kisumu County. Research at the intersection of gender, identity, and empowerment.</p>
+          <ul class="exp-highlights">
+            <li>Conducted individual interviews and focus group discussions</li>
+            <li>Performed data entry, data cleaning, and wrote the final report</li>
           </ul>
         </div>
       </div>
@@ -1062,7 +786,7 @@
         </div>
         <div class="exp-content">
           <div class="exp-role">Field Researcher — DFID-Funded Torture Documentation Study</div>
-          <p class="exp-desc">Conducted field research for a multi-country DfID-funded project across Nairobi, Dhaka, and Kathmandu.</p>
+          <p class="exp-desc">Conducted field research for a multi-country DfID-funded project spanning Nairobi, Dhaka, and Kathmandu. Documentation work tied to human rights, justice, and the empowerment of survivors.</p>
           <ul class="exp-highlights">
             <li>Pre-tested data collection tools; interviewed 100 respondents across two low-income areas in two weeks</li>
             <li>Conducted data entry, data cleaning, and wrote the final field report</li>
@@ -1077,19 +801,20 @@
         <div class="exp-meta">
           <div class="exp-dates">May – Jun 2013</div>
           <div class="exp-org">UNDP Somalia</div>
-          <div class="exp-loc">Nairobi, Kenya</div>
+          <div class="exp-loc">Nairobi / Somalia</div>
         </div>
         <div class="exp-content">
           <div class="exp-role">Gender Unit Intern</div>
-          <p class="exp-desc">Supported UNDP Somalia's Gender Unit — conducting research, developing training frameworks, and coordinating across departments and UN agencies.</p>
+          <p class="exp-desc">Supported UNDP Somalia's Gender Unit — conducting research, developing training frameworks, and coordinating across departments and UN agencies. A formative experience applying a gender lens inside a large international institution in a fragile context.</p>
           <ul class="exp-highlights">
             <li>Researched gender equality, social inequalities, and challenges facing women in Somalia</li>
             <li>Developed Terms of Reference for gender awareness and sensitisation training targeting operational staff</li>
             <li>Mapped organisations' initiatives on women's issues, including coordination with UNICEF on FGM prevention</li>
-            <li>Designed differentiated training: 80/20 awareness-to-skills ratio for Somalia; inverse for Kenya office</li>
-            <li>Conducted stakeholder consultations across Procurement, ICT, HR, and Finance departments</li>
+            <li>Designed differentiated training: 80/20 gender awareness-to-technical ratio for Somalia; inverse for Kenya office</li>
+            <li>Conducted stakeholder consultations across Procurement, ICT, HR, and Finance — identifying gender-specific barriers in each department</li>
+            <li>Identified critical gender gaps in operations including vehicle accessibility for women, inadequate facilities, and cultural barriers in male-dominated sectors</li>
           </ul>
-          <div class="ai-lens"><strong>AI translation:</strong> Cross-departmental stakeholder mapping and differentiated training design = systems thinking directly applicable to AI governance and trust design in complex organisations.</div>
+          <div class="ai-lens"><strong>AI translation:</strong> Cross-departmental systems mapping with a gender equity lens is exactly the thinking needed to design AI governance frameworks that do not reproduce existing inequalities.</div>
         </div>
       </div>
 
@@ -1101,11 +826,45 @@
         </div>
         <div class="exp-content">
           <div class="exp-role">Regional Coordinator — International Training Programme in Strategic Environmental Assessment</div>
-          <p class="exp-desc">Planned, coordinated, and implemented an international training programme in Kenya funded by SIDA, in partnership with Sweden and Kenya's National Environmental Management Authority.</p>
+          <p class="exp-desc">Planned, coordinated, and implemented an international training programme funded by SIDA, bridging Swedish programme design with Kenyan environmental governance realities. A direct intersection of operations, environment, and international development.</p>
           <ul class="exp-highlights">
             <li>Coordinated the full programme across Nairobi with the Sweden-based team</li>
-            <li>Managed all local logistical arrangements in consultation with NEMA</li>
-            <li>Ensured cross-jurisdictional alignment between Swedish programme design and Kenyan implementation context</li>
+            <li>Managed all local logistical arrangements in consultation with Kenya's National Environmental Management Authority (NEMA)</li>
+            <li>Ensured alignment between international programme design and local implementation context</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-dates">Sep 2008 – May 2009</div>
+          <div class="exp-org">Satyam Computer Services Ltd.</div>
+          <div class="exp-loc">Hyderabad, India</div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-role">Learning and Development Coordinator</div>
+          <p class="exp-desc">Lived and worked in India for nearly a year — coordinating virtual learning programmes and supporting a global diversity conference inside one of India's largest IT companies at the time.</p>
+          <ul class="exp-highlights">
+            <li>Co-facilitated virtual learning on professional skills and people management for a global workforce</li>
+            <li>Developed curriculum for the School of Management</li>
+            <li>Supported the Annual Global Diversity Conference</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-dates">Jun – Aug 2006</div>
+          <div class="exp-org">West Africa AIDS Foundation (WAAF)</div>
+          <div class="exp-loc">Accra, Ghana</div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-role">Volunteer Facilitator</div>
+          <p class="exp-desc">Lived and worked in Ghana as a volunteer — conducting HIV and AIDS peer education and supporting people living with the disease. Work at the intersection of gender, health, and community empowerment.</p>
+          <ul class="exp-highlights">
+            <li>Conducted HIV and AIDS peer education training in high schools</li>
+            <li>Researched curriculum for youth prevention programmes</li>
+            <li>Supported self-help group activities for people living with HIV/AIDS</li>
           </ul>
         </div>
       </div>
@@ -1116,28 +875,61 @@
 
 <hr class="divider">
 
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <p class="section-label">Academic formation</p>
+    <h2 class="section-title">Education across <em>three continents</em></h2>
+    <p class="section-intro">My formal education has been international from the start — attending an internationally-oriented university in Kenya and gaining a postgraduate qualification in South Africa. These experiences reflect a long-standing orientation toward crossing borders and contexts.</p>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-flag">Kenya · International University</div>
+        <div class="edu-degree">B.A., Psychology</div>
+        <div class="edu-institution">United States International University-Africa (USIU)</div>
+        <div class="edu-location">Nairobi, Kenya · 2004 – 2008</div>
+        <p class="edu-note">Concentrated in Industrial/Organisational Psychology and Management. USIU's international student body and American liberal arts framework made this a genuinely cross-cultural educational experience — a foundation that shapes how I understand people, systems, and organisational behaviour to this day.</p>
+      </div>
+      <div class="edu-card">
+        <div class="edu-flag">South Africa · International qualification</div>
+        <div class="edu-degree">Postgraduate Certificate in TESOL</div>
+        <div class="edu-institution">Nelson Mandela Metropolitan University (NMMU)</div>
+        <div class="edu-location">Port Elizabeth, South Africa · 2016</div>
+        <p class="edu-note">Teaching English to Speakers of Other Languages — a qualification that formalised skills I had already practised in India and Kenya, and connects directly to my work in education and empowerment. Studying in post-apartheid South Africa added a powerful context for understanding structural inequality and systems-level transformation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
 <!-- VOLUNTEER -->
 <section id="volunteer">
   <div class="container">
     <p class="section-label">Giving back</p>
     <h2 class="section-title">Volunteer <em>work</em></h2>
-    <p class="section-intro">A thread running through my entire career: showing up where it matters, even when there's no salary attached.</p>
+    <p class="section-intro">A thread running through my entire career: showing up where it matters, even when there is no salary attached. These experiences span education, health, environmental needs, and basic community support — the three pillars made visible.</p>
     <div class="volunteer-grid">
+      <div class="vol-card">
+        <div class="vol-org">Nest of Love Children's Home</div>
+        <div class="vol-role">Resource Volunteer</div>
+        <div class="vol-location">Thika, Kenya · Feb 2022 – Aug 2022</div>
+        <p class="vol-desc">Ensured consistent monthly water supply for the children's home while addressing food security needs by providing essential staples — beans and maize — as situations required. Practical, unglamorous, necessary work.</p>
+      </div>
       <div class="vol-card">
         <div class="vol-org">Kusoma Tu Foundation</div>
         <div class="vol-role">English Teacher</div>
         <div class="vol-location">Nairobi Children's Remand Center, Kenya · 2016</div>
-        <p class="vol-desc">Taught English weekly to upper primary school children at the remand centre — showing up consistently for a population that most people overlook.</p>
+        <p class="vol-desc">Taught English weekly to upper primary school children at the remand centre. Education as a right, even for children the system has already marginalised.</p>
       </div>
       <div class="vol-card">
         <div class="vol-org">SIRIA Orphans Residential School</div>
         <div class="vol-role">English Teacher</div>
-        <div class="vol-location">Hyderabad, India · 2008–2009</div>
-        <p class="vol-desc">Taught English informally at least once a month to children aged 8–18 at the orphanage, while working in Hyderabad.</p>
+        <div class="vol-location">Hyderabad, India · 2008 – 2009</div>
+        <p class="vol-desc">Taught English informally at least once a month to children aged 8 to 18 at the orphanage, while working in Hyderabad. Carrying the education commitment across borders.</p>
       </div>
       <div class="vol-card">
         <div class="vol-org">Mji Wa Huruma (Elderly People's Home)</div>
-        <div class="vol-role">Resource Management & Research Volunteer</div>
+        <div class="vol-role">Resource Management and Research Volunteer</div>
         <div class="vol-location">Nairobi, Kenya · 2008</div>
         <p class="vol-desc">Collaborated with a team to support an elderly people's home — engaging residents, fundraising, managing resources, and purchasing essential items.</p>
       </div>
@@ -1145,7 +937,7 @@
         <div class="vol-org">West Africa AIDS Foundation (WAAF)</div>
         <div class="vol-role">Facilitator</div>
         <div class="vol-location">Accra, Ghana · 2006</div>
-        <p class="vol-desc">Conducted HIV & AIDS peer education training in high schools, researched curriculum for youth prevention programmes, and supported self-help groups for people living with HIV/AIDS.</p>
+        <p class="vol-desc">Conducted HIV and AIDS peer education training in high schools, researched curriculum for youth prevention programmes, and supported self-help groups for people living with HIV/AIDS. Gender and health empowerment in practice.</p>
       </div>
     </div>
   </div>
@@ -1156,27 +948,27 @@
 <!-- ARTICLES -->
 <section id="articles">
   <div class="container">
-    <p class="section-label">Writing & thinking</p>
+    <p class="section-label">Writing and thinking</p>
     <h2 class="section-title">Ideas I'm <em>working through</em></h2>
-    <p class="section-intro">Writing is how I process what I'm learning and share it with others navigating the same questions. Articles are coming — here's what's in the pipeline.</p>
+    <p class="section-intro">Writing is how I process what I am learning and share it with others navigating the same questions — at the intersection of operations, gender, and AI in mission-driven organisations.</p>
     <div class="articles-coming">
       <div class="article-placeholder">
-        <div class="article-category">AI + Operations</div>
-        <div class="article-title">What 7 years running operations taught me about AI failure modes</div>
-        <p class="article-preview">Before AI, we called it "silent failure" too — when a process looks correct on paper but something has gone wrong downstream. Here's what operational leadership taught me about catching it.</p>
-        <span class="article-status">✦ Coming soon</span>
+        <div class="article-category">AI and Operations</div>
+        <div class="article-title">What 7 years running school operations taught me about AI failure modes</div>
+        <p class="article-preview">Before AI, we called it "silent failure" too — when a process looks correct on paper but something has gone wrong downstream. Here is what operational leadership in education taught me about catching it early.</p>
+        <span class="article-status">Coming soon</span>
       </div>
       <div class="article-placeholder">
-        <div class="article-category">NGO Sector</div>
-        <div class="article-title">The AI readiness gap in the development sector — and why it's an opportunity</div>
-        <p class="article-preview">Most development organisations are behind on AI — not because they lack resources, but because they lack the right bridge between operational leadership and technical implementation.</p>
-        <span class="article-status">✦ Coming soon</span>
+        <div class="article-category">Gender and Technology</div>
+        <div class="article-title">Building AI systems that do not reproduce the inequalities they promised to fix</div>
+        <p class="article-preview">A gender lens is not an add-on to responsible AI — it is foundational. What development sector experience teaches us about designing systems that include by default rather than compensate later.</p>
+        <span class="article-status">Coming soon</span>
       </div>
       <div class="article-placeholder">
-        <div class="article-category">Career</div>
-        <div class="article-title">Building in public: what I'm learning as an operations professional entering AI</div>
-        <p class="article-preview">I'm not pretending to be an AI expert. I'm a senior operations leader who is deliberately and transparently adding AI skills. Here's what that journey actually looks like.</p>
-        <span class="article-status">✦ Coming soon</span>
+        <div class="article-category">Career and Learning</div>
+        <div class="article-title">Building in public: what I am learning as an operations professional entering AI</div>
+        <p class="article-preview">I am not pretending to be an AI expert. I am a senior operations leader who is deliberately and transparently adding AI skills. Here is what that journey actually looks like from Nairobi in 2025.</p>
+        <span class="article-status">Coming soon</span>
       </div>
     </div>
   </div>
@@ -1189,7 +981,7 @@
   <div class="container">
     <p class="section-label">Get in touch</p>
     <h2 class="section-title">Let's do <em>meaningful work</em> together</h2>
-    <p class="contact-statement">Open to operations consulting, AI readiness engagements, programme management roles, and remote/international opportunities with NGOs and purpose-driven organisations.</p>
+    <p class="contact-statement">Open to operations consulting, AI readiness engagements, programme management roles, and remote/international opportunities with NGOs and purpose-driven organisations working in education, environment, and empowerment.</p>
     <div class="contact-methods">
       <div class="contact-method">
         <div class="cm-label">Email</div>
@@ -1205,11 +997,12 @@
       </div>
     </div>
     <div class="open-to">
-      <span class="open-to-tag">NGOs & INGOs</span>
+      <span class="open-to-tag">NGOs and INGOs</span>
       <span class="open-to-tag">Social Enterprises</span>
       <span class="open-to-tag">UN Agencies</span>
-      <span class="open-to-tag">Development Finance</span>
-      <span class="open-to-tag">Impact Tech</span>
+      <span class="open-to-tag">Education Sector</span>
+      <span class="open-to-tag">Environmental Organisations</span>
+      <span class="open-to-tag">Gender and Empowerment</span>
       <span class="open-to-tag">Remote-first roles</span>
       <span class="open-to-tag">Consultancy engagements</span>
     </div>
@@ -1223,20 +1016,20 @@
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
     <a href="#articles">Writing</a>
     <a href="mailto:hannah.njoroge1@gmail.com">Email</a>
   </div>
 </footer>
 
 <script>
-  function showTab(id) {
+  function showTab(id, btn) {
     document.querySelectorAll('.exp-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.exp-tab').forEach(t => t.classList.remove('active'));
     document.getElementById(id).classList.add('active');
-    event.target.classList.add('active');
+    btn.classList.add('active');
   }
 
-  // Subtle scroll fade-in
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -1246,7 +1039,7 @@
     });
   }, { threshold: 0.1 });
 
-  document.querySelectorAll('.service-card, .course-card, .vol-card, .exp-item, .article-placeholder, .stat').forEach(el => {
+  document.querySelectorAll('.service-card, .course-card, .vol-card, .exp-item, .article-placeholder, .stat, .edu-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(16px)';
     el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
